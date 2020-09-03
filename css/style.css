@@ -1,152 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
+body {
+    background-color: Gainsboro;
+    opacity: 0.9;
+}
 
-  body {
-      font-size: 16px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-   
-  #contenedor-header {
+
+.header {
     width: 100%;
-    height: 80px;
-    background-color:rgb(131, 19, 19);
-    position: fixed;
-    z-index: 10;    
-    
-    
-  }
+    min-height: 100vh;
+    background-image: url(../imagenes/workstation-336369_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-attachment: fixed;
+    min-width: 517px;
+}
 
-  #header {
-    display: flex;
-    justify-content: flex-end;
-      
-  }
-
-  #navbar ul {
-    display: flex;
-    margin: 20px; 
-    
-  }
-
-  #navbar ul li{
-    margin: 10px;
-    list-style: none;
-      
-  }
-
-  #navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-  }
-
-
-  #navbar a:hover {
-    color: var(--main-blue);
-  }
-
-
-  #contenedor-bienvenida {
+.header:before {
+    content: '';
     width: 100%;
     height: 100vh;
-    background-color:rgb(45, 45, 83);
-    color: cornsilk;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    
-  }
+    position: absolute;
+    top: 0;
+    left: 0;    
+    min-width: 325px;
+    background-image: linear-gradient(rgba(129, 39, 39, 0.1), rgb(65, 68, 77));
+    min-width: 517px;
+}
 
+.navg a {
+    color: #f4f4f4 !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    padding: 10px 15px;
+    text-transform: uppercase; 
+       
+}
 
-  .projects-section {
-     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-
-#contenedor-proyectos {
-    width: 80%;
-    height: 100%;
-    display: flex;     
-    align-items: center; 
-    flex-wrap: wrap;  
-    justify-content: center; 
-      
-  }
-
-  
-  .imagenes {
-    background-color:rgb(202, 202, 219);
-    height: 400px;
-    width: 400px;
-    margin: 10px;
-            
-  }
-
-
- .imagenes img {
-     width: 100%;
-     height: 92%;
- } 
-
- .imagenes a {
-     text-align: center;
- }
-
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.text-header {
+    min-height: 100vh;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-  
 
-  .btn btn-todos-los-proyectos {
-    display: flex;
-    justify-content: center;
-    margin: 20px; 
+.text-header h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  }
-
-  #contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-      font-size: 22px;
-  }
-
-  #contacto h2 {
-      margin: 10px;
-
-  }
-
-  .contact-links {
-    margin: 15px;
-  }
+.text-header span {
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
-  @media (max-widht:800px) {
-    #contenedor-proyectos {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;     
-        align-items: center; 
-        justify-content: center; 
-        background-color: blanchedalmond;    
-      }
+.btn-portafolio {
+    padding: 7px 12px;
+    color: whitesmoke;
+    background-color:  rgb(161, 95, 95);
+    border-radius: 10px;
+    /* opacity: 0.8; */
+}
+
+.btn-portafolio:hover {
+    color: rgb(204, 197, 197);
     
+} 
 
-  }
+.bg-nav {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background-color: rgb(161, 95, 95);
+    opacity: 0.9;
+    text-transform: uppercase;    
+}   
+
+
+.nav-link {
+    font-size: 25px;
+}
+
+.nav-link:hover {   
+    background-color: rgb(65, 68, 77);
+    border-radius: 10px;   
+}
+
+.dropdown-menu {
+    font-size: 22px;    
+    border-radius: 10px;
+    color:  Gainsboro; 
+}
+
+.dropdown-menu:hover {
+    font-size: 22px; 
+}
+
+.dropdown-item {   
+    color:  rgb(161, 95, 95);
+
+}
+
+.dropdown-item:hover {   
+    color: rgb(65, 68, 77);
+    background-color:rgb(161, 95, 95);   
+
+}
+
+/* FIN HEADER */
+
+
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.imagenes {
+    padding-top: 80px;
+    margin-bottom: 32px;
+    
+}
+
+.project-title {
+    font-size: 25px;
+    
+    color: rgb(161, 95, 95);
+    text-transform: uppercase;  
+}
+
+
+
+p {
+    font-size: 20px;
+}
+
+#mas-info{
+    color:  rgb(161, 95, 95);
+}
